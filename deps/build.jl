@@ -69,4 +69,4 @@ end
     provides(WinRPM.RPM, "Ipopt", [libipopt], os = :Windows)
 end
 
-@BinDeps.install [:libipopt => :libipopt]
+@BinDeps.install @compact Dict(:libipopt => :libipopt)
